@@ -35,7 +35,7 @@ class Main extends PluginBase
 	public function onEnable()
 	{
 		$lang = $this->getConfig()->get("language", "tur");
-		$baseFolder = $this->getFile() . "/resources";
+		$baseFolder = $this->getServer()->getPluginPath() . "trade/resources";
 		if ($this->getConfig()->get("type") == "ui")
 		{
 			if (!class_exists(BaseForm::class))
